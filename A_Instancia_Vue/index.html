@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <p>
+            {{ foo }}
+        </p>
+        <button v-on:click="foo = 'baz' ">Change it</button>
+    </div>
+
+    <script>
+
+        // Nosso objeto de dados
+        var data = { a: 1 };
+
+        // O objeto é adicionado à instância Vue
+        var vm = new Vue({
+            data: data
+        });
+
+        // É uma referência ao mesmo objeto!
+        console.log(vm.a === data.a);
+
+        // Atribuir à propriedade na instância
+        // também afeta o dado original
+        vm.a = 2;
+        console.log(data.a);
+
+        data.a = 3;
+        console.log(vm.a);
+
+        //
+        var obj = {
+            foo: 'bar'
+        };
+
+        Object.freeze(obj);
+
+        new Vue({
+            el: '#app',
+            data: obj
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>
