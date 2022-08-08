@@ -9,97 +9,124 @@
 </head>
 <body>
 
-    <div id="app">
+    <!-- <div id="app">
         <h1>{{ menssage }}</h1>
-    </div>
+    </div> -->
 
-    <div id="app-2">
+    <!-- <div id="app-2">
         <span v-bind:title="message">
             Pare o mouse sobre mim e veja a dica interligada dinamicamente!
         </span>
-    </div>
+    </div> -->
 
-    <div id="app-3">
+    <!-- <div id="app-3">
         <p v-if="seen">Agora você me viu</p>
-    </div>
+    </div> -->
 
-    <div id="app-4">
+    <!-- <div id="app-4">
         <ol>
             <li v-for="todo in todos">
                 {{ todo.text }}
             </li>
         </ol>
-    
-    
-    </div>
+    </div> -->
 
-    <div id="app-5">
+    <!-- <div id="app-5">
         <p>
             {{ message }}
         </p>
         <button v-on:click="reverseMessage">
             Inverter Mensgaem
         </button>
-    </div>
+    </div> -->
     
-    <div id="app-6">
+    <!-- <div id="app-6">
         <p>
             {{ message }}
         </p>
         <input v-model="message" title="teste" />
-    </div>
+    </div> -->
     
+    <div id="app-7">
+        <ol>
+             <!-- Cria uma instância do componente todo-item -->
+            <todo-item
+                v-for="item in groceryList"
+                v-bind:todo="item"
+                v-bind:key="item.id"
+            ></todo-item>
+        </ol>
+    </div>
+
     <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                menssage: 'Olá VueJs! Meu olá, Mundo!'
-            }
-        });
+        // var app = new Vue({
+        //     el: '#app',
+        //     data: {
+        //         menssage: 'Olá VueJs! Meu olá, Mundo!'
+        //     }
+        // });
 
-        var app2 = new Vue({
-            el: '#app-2',
-            data: {
-                message: 'Você carregou esta pagina em ' + new Date().toLocaleDateString()
-            }
-        });
+        // var app2 = new Vue({
+        //     el: '#app-2',
+        //     data: {
+        //         message: 'Você carregou esta pagina em ' + new Date().toLocaleDateString()
+        //     }
+        // });
         
-        var app3 = new Vue({
-            el: '#app-3',
-            data: {
-                seen: true //false
-            }
-        });
+        // var app3 = new Vue({
+        //     el: '#app-3',
+        //     data: {
+        //         seen: true //false
+        //     }
+        // });
 
-        var app4 = new Vue({
-            el: '#app-4',
+        // var app4 = new Vue({
+        //     el: '#app-4',
+        //     data: {
+        //         todos: [
+        //             { text: 'Aprender JavaScript' },
+        //             { text: 'Aprender Vue' },
+        //             { text : 'Criar algo incrível' }
+        //         ]
+        //     }
+        // });
+    
+        // var app5 = new Vue({
+        //     el: '#app-5',
+        //     data: {
+        //         message: 'Olá Vue'
+        //     },
+        //     methods: {
+        //         reverseMessage: function() {
+        //             this.message= this.message.split('').reverse().join('')
+        //         }
+        //     }
+        // });
+    
+        // var app6 = new Vue({
+        //     el: '#app-6',
+        //     data: {
+        //         message: 'Olá Vue!'
+        //     }
+        // });
+    
+        // Define um novo componente chamdo todo-item
+        
+        Vue.component('todo-item', {
+            props: ['todo'],
+            template: '<li>{{ todo.text }}</li>'
+        })
+
+        var app7 = new Vue({
+            el:'#app-7',
             data: {
-                todos: [
-                    { text: 'Aprender JavaScript' },
-                    { text: 'Aprender Vue' },
-                    { text : 'Criar algo incrível' }
+                groceryList: [
+                    { id: 0, text: 'Vegatais' },
+                    { id: 1, text: 'Queijo' },
+                    { id: 2, text: 'Qualquer outra que humanos podem comer' }
                 ]
             }
-        });
-    
-        var app5 = new Vue({
-            el: '#app-5',
-            data: {
-                message: 'Olá Vue'
-            },
-            methods: {
-                reverseMessage: function() {
-                    this.message= this.message.split('').reverse().join('')
-                }
-            }
-        });
-    
-        var app6 = new Vue({
-            el: '#app-6',
-            data: {
-                message: 'Olá Vue!'
-            }
-        });
+        })
     </script>
 
 </body>
