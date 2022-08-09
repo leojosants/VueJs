@@ -1,7 +1,7 @@
 <!--  -->
 <template>
   <div>
-      <h2>Meu fofmulário:</h2>
+      <h2>Meu formulário:</h2>
 
         <form action="">
             <div>
