@@ -12,19 +12,29 @@
         </ul>
 
         <p v-show="mostrar_email">Mande uma memsagem para: {{ email }}</p>
+        <p>Para acessar meu portifólio <a v-bind:href="meu_link" target="_blank">basta clicar aqui</a></p>
+        <Picture />
     </div>
 </template>
 
 <script>
+    import Picture from './Picture.vue'
+    
     export default {
-        name: 'Info',
+    name: "Info",
 
-        data() {
-            return {
-                esta_trabalhando: false,
-                mostrar_email: true,
-                email: 'leo@gmail'
-            }
-        }
-    }
+    components: {
+        Picture
+    },
+
+    data() {
+        return {
+            esta_trabalhando: false,
+            mostrar_email: true,
+            email: "leo@gmail",
+            meu_link: "https://github.com/leojosants"
+        };
+    },
+    components: { Picture }
+}
 </script>
