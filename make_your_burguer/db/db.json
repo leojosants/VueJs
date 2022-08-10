@@ -81,36 +81,5 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": [
-    {
-      "nome": "Leonardo",
-      "carne": "Picanha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Bacon",
-        "Tomate"
-      ],
-      "status": "Finalizado",
-      "id": 2
-    },
-    {
-      "nome": "Leonardo Santos",
-      "carne": "Veggie burger",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Salame",
-        "Cheddar"
-      ],
-      "status": "Finalizado",
-      "id": 5
-    },
-    {
-      "nome": "frfr",
-      "carne": "Alcatra",
-      "pao": "Italiano Branco",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 6
-    }
-  ]
+  "burgers": []
 }
