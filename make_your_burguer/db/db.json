@@ -90,7 +90,7 @@
         "Cheddar",
         "Bacon"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 1
     },
     {
@@ -105,16 +105,6 @@
       "id": 2
     },
     {
-      "nome": "frfr",
-      "carne": "Picanha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
       "nome": "Leonardo Santos",
       "carne": "Veggie burger",
       "pao": "3 Queijos",
@@ -122,7 +112,7 @@
         "Salame",
         "Cheddar"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 5
     },
     {
@@ -132,19 +122,6 @@
       "opcionais": [],
       "status": "Solicitado",
       "id": 6
-    },
-    {
-      "nome": "agaga",
-      "carne": "Picanha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Pepino",
-        "Tomate",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 7
     }
   ]
 }
