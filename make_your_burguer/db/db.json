@@ -83,17 +83,6 @@
   ],
   "burgers": [
     {
-      "nome": "lolol",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Cheddar",
-        "Bacon"
-      ],
-      "status": "Em produção",
-      "id": 1
-    },
-    {
       "nome": "Leonardo",
       "carne": "Picanha",
       "pao": "Parmesão e Orégano",
@@ -101,7 +90,7 @@
         "Bacon",
         "Tomate"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 2
     },
     {
