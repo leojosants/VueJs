@@ -105,16 +105,6 @@
       "id": 2
     },
     {
-      "nome": "Leonardo",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado",
-      "id": 3
-    },
-    {
       "nome": "frfr",
       "carne": "Picanha",
       "pao": "Italiano Branco",
@@ -142,6 +132,19 @@
       "opcionais": [],
       "status": "Solicitado",
       "id": 6
+    },
+    {
+      "nome": "agaga",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Pepino",
+        "Tomate",
+        "Cheddar",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "id": 7
     }
   ]
 }
