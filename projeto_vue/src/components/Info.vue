@@ -41,11 +41,14 @@
         Picture
     },
 
+    props: {
+        email: String,
+        esta_trabalhando: Boolean
+    },
+
     data() {
         return {
-            esta_trabalhando: false,
             mostrar_email: false,
-            email: "leo@gmail",
             meu_link: "https://github.com/leojosants",
             textoBotao: 'Mostrar e-mail',
             
